@@ -140,7 +140,7 @@ public class SimulationManager : MonoBehaviour
             }
             //Output to the file then load the next scene
 
-            using (StreamWriter streamWriter = new StreamWriter("output.txt", true)) 
+            using (StreamWriter streamWriter = new StreamWriter("../output.txt", true)) 
             {
                 if (SceneManager.GetActiveScene().buildIndex == 1) 
                 {
