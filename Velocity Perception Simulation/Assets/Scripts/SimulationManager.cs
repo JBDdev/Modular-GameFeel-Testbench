@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using UnityEngine.SceneManagement;
+using System;
 
 public class SimulationManager : MonoBehaviour
 {
@@ -48,7 +49,7 @@ public class SimulationManager : MonoBehaviour
         //Generate random start values
         for (int i = 0; i < timerStartThresholds.Length; i++)
         {
-            timerStartThresholds[i] = Random.Range(2.5f, 15f);
+            timerStartThresholds[i] = UnityEngine.Random.Range(2.5f, 15f);
         }
 
         GameObject canvas = GameObject.Find("Canvas");
@@ -142,10 +143,16 @@ public class SimulationManager : MonoBehaviour
 
             using (StreamWriter streamWriter = new StreamWriter("output.txt", true)) 
             {
+                if (SceneManager.GetActiveScene().buildIndex == 1) 
+                {
+                    streamWriter.WriteLine("");
+                    DateTimeOffset now = (DateTimeOffset)DateTime.UtcNow;
+                    streamWriter.WriteLine("[Results recorded from test at " + now.ToString("MM/dd/yyyy") + "/" + now.ToUnixTimeSeconds() + "]");
+                }
                 streamWriter.WriteLine(SceneManager.GetActiveScene().name + " results: " + results[0] + ", " + results[1] + ", " + results[2]);
             }
 
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         currentTest++;
