@@ -392,12 +392,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You will be presented with a 3D character moving at a fixed speed. Eventually,
-    the character speed will begin to increase. When you notice this happen, press
-    the left mouse button. The simulation will then reset and start the next test.
-    If you don''t see an increase in character speed, do not press the button, and
-    the next test will proceed after 30s have passed. Every 3 tests, the environment
-    will change. A text prompt will appear when this occurs. '
+  m_text: 'You will be presented with a 3D character. Eventually, the character will
+    start to move forward. When you notice this happen, press the left mouse button.
+    The simulation will then reset and start the next test. If the character does
+    not move at all, do not press the button, and the next test will proceed after
+    30s have passed. Every 3 tests, the environment will change. A text prompt will
+    appear when this occurs. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
