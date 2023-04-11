@@ -1,0 +1,21 @@
+
+[Results recorded from test at 04/11/2023/1681230490]
+Checkerboard results: 0.9602507, 0.828652, 0.7300979
+NearbyObjects results: 0.7146407, 1.331494, 0.7251902
+Control results: 6.828452, 5.032098, 4.452504
+Grass results: 1.056742, 0.5742006, 0.5452747
+BigLandmark results: 2.15007, 1.410976, 1.099209
+
+[Results recorded from test at 04/11/2023/1681231378]
+Checkerboard results: 1.214847, 1.125664, 1.103019
+NearbyObjects results: 0.8810023, 0.8645247, 0.8646303
+Control results: 10.0002, 10.00007, 0
+Grass results: 0.7332891, 0.9723004, 0.6457992
+BigLandmark results: 2.409606, 4.016689, 3.437138
+
+[Results recorded from test at 04/11/2023/1681233216]
+Checkerboard results: 0.9545991, 1.039244, 0.6868706
+NearbyObjects results: 1.070317, 0.8289391, 1.025967
+Control results: 10.00052, 10.00082, 10.00029
+Grass results: 0.9402757, 1.135492, 0.8097518
+BigLandmark results: 4.477072, 3.825936, 6.58842

@@ -136,7 +136,7 @@ public class SimulationManager : MonoBehaviour
         {
             for (int i = 0; i < results.Length; i++) 
             {
-                Debug.Log("Result " + (i+1) + ": " + results[i]);
+                //Debug.Log("Result " + (i+1) + ": " + results[i]);
             }
             //Output to the file then load the next scene
 
